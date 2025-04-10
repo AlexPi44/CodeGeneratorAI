@@ -149,18 +149,6 @@ aws configure  # Add your credentials
 
 ---
 
-## 🧩 Tags
-
-`#AI` `#AWS` `#Claude` `#Bedrock` `#Serverless` `#Lambda` `#CodeGenerator` `#Python`
-
----
-
-## 🙌 Author
-
-Created by [Your Name]  
-For questions, reach out or submit an issue on this repo.
-
----
 
 ## 📝 License
 
