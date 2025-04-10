@@ -1,0 +1,26 @@
+#!/bin/bash
+
+# Step 1: Create a new directory for the layer
+mkdir boto3_layer
+cd boto3_layer
+
+# Step 2: Create a 'python' subdirectory (AWS Lambda requires this structure)
+mkdir python
+
+# Step 3: Create a virtual environment (optional, helps isolate dependencies)
+python3 -m venv venv
+
+# Step 4: Activate the virtual environment
+source venv/bin/activate
+
+# Step 5: Install boto3 into the 'python' directory
+pip install boto3 -t ./python
+
+# Step 6: Deactivate the virtual environment to clean up
+deactivate
+
+# Step 7: Zip the 'python' folder into a layer package
+zip -r boto3_layer.zip ./python
+
+# Optional cleanup: remove virtual environment if you don't need it anymore
+# rm -r venv
